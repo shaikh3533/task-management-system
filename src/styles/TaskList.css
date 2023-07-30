@@ -1,0 +1,88 @@
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task-item {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.task h3 {
+  margin: 0;
+}
+
+.task p {
+  margin: 10px 0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+.dark-mode .task-item {
+  background-color: #424141;
+  color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .task-item {
+  border: 1px solid #7c7c7c;
+}
+
+.dark-mode .task h3 {
+  color: #66b3ff;
+}
+
+.dark-mode .task p {
+  color: #ccc;
+}
+
+.dark-mode .task-actions button:first-child {
+  background-color: #00cc66;
+}
+
+.dark-mode .task-actions button:last-child {
+  background-color: #e60000;
+}
+
+.dark-mode .task-item.completed {
+  background-color: #728478;
+  border: 1px solid #f1f4f2;
+}
